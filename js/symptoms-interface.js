@@ -1,14 +1,13 @@
 
+var Doctors = require('./../js/symptoms.js').doctorModule;
 
 
-
-
-
-// var ExampleModule = require('./../js/scripts.js').exampleModule;
-//
-//
-// $(document).ready(function() {
-//   var exampleInstance = new ExampleModule('args');
-//
-//   console.log(exampleInstance.examplePrototype());
-// });
+$(document).ready(function() {
+  $('.searchButton').click(function() {
+    var medicalIssue = $(".symptoms").val();
+    var docObject = new Doctors();
+    var searchResult = docObject.getDoctors(medicalIssue);
+    console.log(searchResult);
+    $('.output').append(searchResult);
+  });
+});
