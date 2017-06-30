@@ -8,8 +8,8 @@ $(document).ready(function() {
     var medicalIssue = $(".symptoms").val();
     var docObject = new Doctors();
     var searchResult = docObject.getDoctors(medicalIssue);
-    console.log(searchResult);
-    console.log(medicalIssue);
-    $('.output').append(searchResult[0].profile.first_name);
+    // console.log(searchResult);
+    // console.log(Doctors.result);
+    $('.output').append(searchResult);
   });
 });
