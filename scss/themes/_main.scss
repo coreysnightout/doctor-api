@@ -4,6 +4,10 @@ body {
   background-color: $doctorBlue;
   font-family: sans-serif;
   margin: 0;
+  background-image: url(/img/wall.jpg);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 header {
@@ -24,4 +28,36 @@ header {
 h4 {
   margin-left: 20px;
   color: #255c93;
+}
+
+form {
+  background-color: $doctorBlue;
+  height: 160px;
+  width: 40%;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 8px 8px 20px grey;
+}
+
+input {
+  display: flex;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+button {
+  display: flex;
+  height: 29px;
+  background-color: #afd6fd;
+  width: 100px;
+  border-radius: 3px;
+  border: 0;
+  align-self: center;
 }
