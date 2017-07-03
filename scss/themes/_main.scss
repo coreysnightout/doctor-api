@@ -8,6 +8,8 @@ body {
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
+  font-size: 10px;
+  text-align: center;
 }
 
 header {
@@ -23,11 +25,14 @@ header {
   display: flex;
   align-self: center;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-h4 {
+.head {
   margin-left: 20px;
   color: #255c93;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 form {
@@ -41,6 +46,28 @@ form {
   margin: auto;
   margin-top: 100px;
   box-shadow: 8px 8px 20px grey;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background-color: $doctorBlue;
+  margin: 20px;
+  box-shadow: 8px 8px 20px grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+img {
+  width: 100px;
+  height: autp;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 input {
@@ -60,4 +87,8 @@ button {
   border-radius: 3px;
   border: 0;
   align-self: center;
+}
+
+li {
+  list-style: none;
 }
