@@ -2,7 +2,6 @@
 var Doctors = require('./../js/symptoms.js').doctorModule;
 
 var displayList = function(response) {
-  console.log(response);
   for(i=0; i<10; i++)
   {
     var specialty = "specialty: " + response.data[i].specialties[0].name;
@@ -11,15 +10,13 @@ var displayList = function(response) {
   }
 }
 
-
-console.log(displayList);
-
 $(document).ready(function() {
-  $('.searchButton').click(function() {
+  $('.sickness').submit(function() {
+    event.preventDefault();
 
     var medicalIssue = $(".symptoms").val();
     var docObject = new Doctors();
     $('.output').empty();
-    var searchResult = docObject.getDoctors(medicalIssue);
+    docObject.getDoctors(medicalIssue, displayList);
   });
 });
